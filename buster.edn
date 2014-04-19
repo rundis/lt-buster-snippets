@@ -2,27 +2,68 @@
  :snippets [
             {:name "Buster TestCase"
              :key "tc"
-             :snippet-file "testcase.snip"
-             }
+             :snippet-file "testcase.snip"}
             {:name "Buster Test"
              :key "tt"
-             :snippet-file "test.snip"
-             }
-            {:name "assert equals"
-             :key "ae"
-             :snippet "assert.equals($1, $2);$0"
-             }
-            {:name "refute equals"
-             :key "re"
-             :snippet "refute.equals($1, $2);$0"
-             }
-
-            {:name "Dummy"
-             :key "dy"
-             :snippet "console.log('hello');" }
-
-            {:name "Dummy 2"
-             :key "dy"
-             :snippet "console.log('hello2');" }
-
+             :snippet-file "test.snip"}
+            {:name "Buster setUp"
+             :key "su"
+             :snippet-file "setUp.snip"}
+            {:name "Buster tearDown"
+             :key "td"
+             :snippet-file "tearDown.snip"}
+            {:name "Buster Assert Equals"
+             :key "ase"
+             :snippet "assert.equals(${1:actual}, ${2:expected});$0"}
+            {:name "Buster Refute Equals"
+             :key "ree"
+             :snippet "refute.equals(${1:actual}, ${2:expected});$0"}
+            {:name "Buster Assert Same"
+             :key "ass"
+             :snippet "assert.same(${1:actual}, ${2:expected});$0"}
+            {:name "Buster Refute Same"
+             :key "res"
+             :snippet "refute.same(${1:actual}, ${2:expected});$0"}
+            {:name "Buster Assert Match"
+             :key "asm"
+             :snippet "assert.match(${1:actual}, ${2:matcher});$0"}
+            {:name "Buster Refute Match"
+             :key "rem"
+             :snippet "refute.match(${1:actual}, ${2:matcher});$0"}
+            {:name "Buster Assert Called"
+             :key "asc"
+             :snippet "assert.called(${1:spy});$0"}
+            {:name "Buster Refute Called"
+             :key "rec"
+             :snippet "refute.called(${1:spy});$0"}
+            {:name "Buster Assert Called Once"
+             :key "asc1"
+             :snippet "assert.calledOnce(${1:spy});$0"}
+            {:name "Buster Refute Called Once"
+             :key "rec1"
+             :snippet "refute.calledOnce(${1:spy});$0"}
+            {:name "Buster Assert Called With"
+             :key "ascw"
+             :snippet "assert.calledWith(${1:spy}, ${2:arguments});$0"}
+            {:name "Buster Refute Called"
+             :key "recw"
+             :snippet "refute.calledWith(${1:spy}, ${2:arguments});$0"}
+            {:name "Buster Assert Exception"
+             :key "asx"
+             :snippet-file "assertEx.snip"}
+            {:name "Buster Refute Exception"
+             :key "rex"
+             :snippet-file "refuteEx.snip"}
+            {:name "Buster Assert tagName"
+             :key "astn"
+             :snippet "assert.tagName(${1:element}, \"${2:tagName}\");$0"}
+            {:name "Buster Refute tagName"
+             :key "retn"
+             :snippet "refute.tagName(${1:element}, \"${2:tagName}\");$0"}
+            {:name "Buster Assert className"
+             :key "ascn"
+             :snippet "assert.className(${1:element}, \"${2:className}\");$0"}
+            {:name "Buster Refute className"
+             :key "recn"
+             :snippet "refute.className(${1:element}, \"${2:className}\");$0"}
             ]}
