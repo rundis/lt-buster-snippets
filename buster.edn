@@ -1,5 +1,8 @@
 {:modes {:+ #{:editor.javascript}}
  :snippets [
+            {:name "Buster Config"
+             :key "bc"
+             :snippet-file "busterConf.snip"}
             {:name "Buster TestCase"
              :key "tc"
              :snippet-file "testcase.snip"}

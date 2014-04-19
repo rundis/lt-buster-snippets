@@ -1,0 +1,8 @@
+var config = module.exports;
+
+config["${1:configName}"] = {
+  environment: "browser",
+  libs: [${2:"libs/**/*.js"}],
+  sources: [${3:"src/**/*.js"}],
+  tests: [${4:"test/**/*-test.js"}]
+};$0
